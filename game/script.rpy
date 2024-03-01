@@ -32,13 +32,8 @@ init python:
         if code_input.strip().upper() == "MAGIC":
             renpy.notify("The cryptex opens revealing a paper inside!")
             renpy.hide_screen("cryptex_screen")
-            # Replace 'secret_plan.png' with the path to your actual image file
             renpy.show("paper")
             jarl = "revealed"
-            # Add a pause so the player can take in the revealed image
-            # renpy.pause(5)
-            # # Hide the image after a few seconds or by player's click
-            # renpy.hide("paper.png")
         else:
             renpy.notify("Nothing happens. It seems that was not the correct code.")
 
